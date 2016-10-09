@@ -13,7 +13,7 @@ let app = () => {
 class AppCtrl {
   constructor() {
     var appCtrl = this;
-    appCtrl.url = 'https://github.com/preboot/angular-webpack';
+    appCtrl.url = 'https://colorgap.com';
       console.log(appCtrl);
   }
 }

@@ -4,7 +4,8 @@
   "description": "Angular 1x, Material Design, Webpack, ES6 and FireBase. Awesome and secure app in minutes.",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "npm_lifecycle_event=prod webpack --process --colors",
+    "travis": "npm_lifecycle_event=prod webpack --process --colors",
     "start": "concurrently --kill-others 'webpack -w --process --colors' 'firebase serve'"
   },
   "repository": {
