@@ -6,7 +6,8 @@
   "scripts": {
     "build": "npm_lifecycle_event=prod webpack --process --colors",
     "travis": "npm_lifecycle_event=prod webpack --process --colors",
-    "start": "concurrently --kill-others 'webpack -w --process --colors' 'firebase serve'"
+    "start": "concurrently --kill-others 'webpack -w --process --colors' 'firebase serve'",
+    "start-prod": "concurrently --kill-others 'npm_lifecycle_event=prod webpack -w --process --colors' 'firebase serve'"
   },
   "repository": {
     "type": "git",
