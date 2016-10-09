@@ -3,6 +3,8 @@ node_js:
     - "4.6"
 script:
     - echo "Deploying!"
+env:
+    - npm_lifecycle_event="$npm_lifecycle_event"
 install:
     - npm install -g firebase-tools
     - npm install
