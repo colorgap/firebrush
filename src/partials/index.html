@@ -1,5 +1,16 @@
 <body ng-app="app">
     <div ng-controller="AppCtrl as appCtrl">
-        test <a ng-href="appCtrl.url" ng-cloak>{{appCtrl.url}}</a>
+        <div layout="column">
+            <md-toolbar md-whiteframe="2">
+                <div class="md-toolbar-tools">
+                    <logo></logo>
+                    <!-- fill up the space between left and right area -->
+                    <span flex></span>
+                    <md-button href="https://github.com/colorgap/firebowyer">
+                        Github
+                    </md-button>
+                </div>
+            </md-toolbar>
+        </div>
     </div>
 </body>
