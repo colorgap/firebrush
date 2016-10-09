@@ -16,9 +16,7 @@ var isTest = ENV === 'test';
 var isProd = ENV === 'prod';
 
 module.exports = function makeWebpackConfig () {
-
   var config = {};
-
   config.entry = isTest ? {} : {
     app: './src/app/app.js'
   };

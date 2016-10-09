@@ -1,4 +1,14 @@
+<!doctype html>
+<html ng-app="app">
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bowyer - app scaffolding for lumen and angular based projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
     <style>
         [ng\:cloak],
         [ng-cloak],
@@ -11,29 +21,12 @@
     </style>
 </head>
 
-<body ng-app="app">
-    <div ng-controller="AppCtrl as appCtrl" ng-cloak>
-        <div layout="column">
-            <md-toolbar md-whiteframe="2" md-theme="inverse" class="md-primary md-hue-1 fixed">
-                <div class="md-toolbar-tools">
-                    <logo></logo>
-                    <!-- fill up the space between left and right area -->
-                    <span flex></span>
-                    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-                        <md-nav-item md-nav-href="https://github.com/colorgap/firebowyer" name="github">Github</md-nav-item>
-                        <md-nav-item md-nav-click="goto('page2')" name="signin">Sign In</md-nav-item>
-                        <md-nav-item md-nav-click="goto('page3')" name="signup">Sign Up</md-nav-item>
-                    </md-nav-bar>
-                </div>
-            </md-toolbar>
-            <md-content class="page-container md-shadow-bottom-z-1 bold" md-colors="::{background: 'bowyer-primary-500',color: 'primary-50'}">
-                <h3 class="md-padding bold">
-                    FIRE BOWYER
-                </h3>
-                <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-                    <md-nav-item md-nav-click="goto('page3')" class="text-white" name="page6">Getting Started</md-nav-item>
-                </md-nav-bar>
-            </md-content>
-        </div>
-    </div>
+<body ng-cloak>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <ui-view>
+    </ui-view>
 </body>
+
+</html>
