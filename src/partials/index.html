@@ -14,29 +14,24 @@
 <body ng-app="app">
     <div ng-controller="AppCtrl as appCtrl" ng-cloak>
         <div layout="column">
-            <md-toolbar md-whiteframe="2" class="md-primary md-hue-1 fixed">
+            <md-toolbar md-whiteframe="2" md-theme="inverse" class="md-primary md-hue-1 fixed">
                 <div class="md-toolbar-tools">
                     <logo></logo>
-                    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-                        <md-nav-item md-nav-click="goto('page1')" name="page1">Home</md-nav-item>
-                        <md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
-                        <md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
-                    </md-nav-bar>
                     <!-- fill up the space between left and right area -->
                     <span flex></span>
-                    <md-button href="https://github.com/colorgap/firebowyer">
-                        Github
-                    </md-button>
+                    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                        <md-nav-item md-nav-href="https://github.com/colorgap/firebowyer" name="github">Github</md-nav-item>
+                        <md-nav-item md-nav-click="goto('page2')" name="signin">Sign In</md-nav-item>
+                        <md-nav-item md-nav-click="goto('page3')" name="signup">Sign Up</md-nav-item>
+                    </md-nav-bar>
                 </div>
             </md-toolbar>
-            <md-content class="page-container" md-colors="::{background: 'bowyer-primary-500',color: 'primary-50'}">
-                <div class="md-padding">
-                    Fire Bowyer
-                </div>
+            <md-content class="page-container md-shadow-bottom-z-1" md-colors="::{background: 'bowyer-primary-500',color: 'primary-50'}">
+                <h2 class="md-padding bold">
+                    FIRE BOWYER
+                </h2>
                 <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-                    <md-nav-item md-nav-click="goto('page1')" name="page4">Page One</md-nav-item>
-                    <md-nav-item md-nav-click="goto('page2')" name="page5">Page Two</md-nav-item>
-                    <md-nav-item md-nav-click="goto('page3')" name="page6">Page Three</md-nav-item>
+                    <md-nav-item md-nav-click="goto('page3')" class="text-white" name="page6">Getting Started</md-nav-item>
                 </md-nav-bar>
             </md-content>
         </div>

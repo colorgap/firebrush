@@ -1,6 +1,6 @@
 import angular from 'angular';
 import angularMaterial from 'angular-material';
-
+import angularUIRouter from 'angular-ui-router';
 import '../styles/app.scss';
 
 let app = () => {
@@ -21,7 +21,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [angularMaterial])
+angular.module(MODULE_NAME, [angularMaterial,angularUIRouter])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl)
   .config(['$mdThemingProvider', function ($mdThemingProvider) {
@@ -47,12 +47,38 @@ angular.module(MODULE_NAME, [angularMaterial])
       'contrastLightColors': ['500', '600', //hues which contrast should be 'dark' by default
         '700', '800', '900', 'A400']    // could also specify this if default was 'dark'
     });
+    $mdThemingProvider.definePalette('bowyer-white', {
+      '50': 'FFFFFF',
+      '100': 'FFFFFF',
+      '200': 'FFFFFF',
+      '300': 'FFFFFF',
+      '400': 'FFFFFF',
+      '500': 'FFFFFF',
+      '600': 'FFFFFF',
+      '700': 'FFFFFF',
+      '800': 'FFFFFF',
+      '900': 'FFFFFF',
+      'A100': 'FFFFFF',
+      'A200': 'FFFFFF',
+      'A400': 'FFFFFF',
+      'A700': 'FFFFFF',
+      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
+      // on this palette should be dark or light
+      'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
+        '200', '300', '400', 'A100'],
+      'contrastLightColors': ['500', '600', //hues which contrast should be 'dark' by default
+        '700', '800', '900', 'A400']    // could also specify this if default was 'dark'
+    });
 
     $mdThemingProvider.theme('bowyer')
       .primaryPalette('bowyer-purple',{
         'hue-1':'50'
       })
       .accentPalette('amber')
+      .warnPalette('orange');
+     $mdThemingProvider.theme('inverse')
+      .primaryPalette('bowyer-white')
+      .accentPalette('deep-purple')
       .warnPalette('orange');
     $mdThemingProvider.setDefaultTheme('bowyer');
   }]);

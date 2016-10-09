@@ -7,3 +7,10 @@ html, body{
 .page-container{
     margin-top: $baseline-grid * 8;
 }
+.bold{
+    font-weight:bold !important;
+}
+.md-bowyer-theme.md-unselected{
+    color:#ffffff !important;
+    font-weight:bold;
+}
