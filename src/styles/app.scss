@@ -1,14 +1,4 @@
-$body-bg: #f1f1f1;
-$font-family: 'Open Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import "_variables";
 @import "../../node_modules/angular-material/angular-material.scss";
-html, body{
-    background-color: $body-bg;
-}
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-    display: none !important;
-}
-.content-section{
-    height: calc(100vh - 48px)!important;
-    overflow-y: auto;
-}
+@import "./common/_layout";

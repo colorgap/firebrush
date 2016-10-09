@@ -26,7 +26,7 @@ angular.module(MODULE_NAME, [angularMaterial])
   .controller('AppCtrl', AppCtrl)
   .config(['$mdThemingProvider', function ($mdThemingProvider) {
     $mdThemingProvider.definePalette('bowyer-purple', {
-      '50': 'D1B5F4',
+      '50': 'FFFFFF',
       '100': 'A872EB',
       '200': '8A41E4',
       '300': '661CC2',
@@ -48,14 +48,12 @@ angular.module(MODULE_NAME, [angularMaterial])
         '700', '800', '900', 'A400']    // could also specify this if default was 'dark'
     });
 
-    $mdThemingProvider.theme('dark-grey').backgroundPalette('grey').dark();
-    $mdThemingProvider.theme('dark-orange').backgroundPalette('orange').dark();
-    $mdThemingProvider.theme('dark-purple').backgroundPalette('deep-purple').dark();
-    $mdThemingProvider.theme('amber').backgroundPalette('amber');
-
     $mdThemingProvider.theme('bowyer')
-      .primaryPalette('bowyer-purple')
-      .accentPalette('amber');
+      .primaryPalette('bowyer-purple',{
+        'hue-1':'50'
+      })
+      .accentPalette('amber')
+      .warnPalette('orange');
     $mdThemingProvider.setDefaultTheme('bowyer');
   }]);
 

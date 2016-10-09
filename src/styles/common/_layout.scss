@@ -1,0 +1,9 @@
+html, body{
+    background-color: $body-bg;
+}
+.fixed{
+    position: fixed;
+}
+.page-container{
+    margin-top: $baseline-grid * 8;
+}
