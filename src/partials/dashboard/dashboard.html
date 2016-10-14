@@ -1,0 +1,20 @@
+<div layout="column">
+    <md-toolbar md-whiteframe="2" md-theme="inverse" class="md-primary md-hue-1 fixed">
+        <div class="md-toolbar-tools">
+            <logo></logo>
+            <!-- fill up the space between left and right area -->
+            <span flex></span>
+            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+                <md-nav-item md-nav-click="goto('page2')" ui-sref="signout" name="signout">Sign out</md-nav-item>
+            </md-nav-bar>
+        </div>
+    </md-toolbar>
+    <md-content class="page-container md-shadow-bottom-z-1 bold" md-colors="::{background: 'bowyer-primary-500',color: 'primary-50'}">
+        <h3 class="md-padding bold">
+            FIRE BOWYER
+        </h3>
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+            <md-nav-item md-nav-click="goto('page3')" class="text-white" name="page6">Getting Started</md-nav-item>
+        </md-nav-bar>
+    </md-content>
+</div>

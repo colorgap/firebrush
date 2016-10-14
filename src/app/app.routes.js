@@ -10,6 +10,13 @@ let routes = ['$stateProvider', '$urlRouterProvider', '$locationProvider',
             controller: 'homeCtrl',
             controllerAs: 'home'
         })
+        .state('dashboard', {
+            url: '/dashboard',
+            name: 'dashboard',
+            template: require('../partials/dashboard/dashboard.html'),
+            controller: 'dashboardCtrl',
+            controllerAs: 'dashboard'
+        })
         .state('setup', {
             url: '/setup',
             name: 'setup',
@@ -21,15 +28,21 @@ let routes = ['$stateProvider', '$urlRouterProvider', '$locationProvider',
             url: '/login',
             name: 'login',
             template: require('../partials/login/login.html'),
-            controller: 'homeCtrl',
-            controllerAs: 'home'
+            controller: 'loginCtrl',
+            controllerAs: 'login'
         })
         .state('register', {
             url: '/register',
             name: 'register',
             template: require('../partials/register/register.html'),
-            controller: 'homeCtrl',
-            controllerAs: 'home'
+            controller: 'registerCtrl',
+            controllerAs: 'register'
+        })
+        .state('signout', {
+            url: '/signout',
+            name: 'signout',
+            controller: 'signoutCtrl',
+            controllerAs: 'signout'
         });
     $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/home');

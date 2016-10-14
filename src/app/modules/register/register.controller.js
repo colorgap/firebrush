@@ -1,12 +1,12 @@
 import firebase from 'firebase';
-class Setup {
+class Register {
   constructor($firebaseObject,$state) {
     'ngInject';
     this.$firebaseObject = $firebaseObject;
     this.$state = $state;
   }
 
-  completeSetup(){
+  validateRegister(){
     firebase.auth().createUserWithEmailAndPassword(this.credentials.email, this.credentials.password)
     .then((data)=>{
       this.$state.go('dashboard');
@@ -17,4 +17,4 @@ class Setup {
   }
 }
 
-export default Setup;
+export default Register;
