@@ -5,7 +5,7 @@ class Signout {
         this.$firebaseObject = $firebaseObject;
         this.$state = $state;
         firebase.auth().signOut().then(() => {
-            this.$state.go('login');
+            this.$state.go('home');
         }, (error) => {
             // An error happened.
         });
