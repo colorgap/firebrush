@@ -6,6 +6,7 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 /**
  * Env
@@ -73,7 +74,11 @@ module.exports = function makeWebpackConfig () {
     })
   ];
 
-  config.plugins = [];
+  config.plugins = [
+    new ngAnnotatePlugin({
+        add: true
+    })
+  ];
 
   // Skip rendering index.html in test mode
   if (!isTest) {
