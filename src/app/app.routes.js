@@ -1,20 +1,21 @@
 import angular from 'angular';
 
-let routes = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+let routes = ['$stateProvider', '$urlRouterProvider', '$locationProvider',
+        function ($stateProvider, $urlRouterProvider,$locationProvider) {
     $stateProvider
-        .state('lp', {
-            url: '/',
-            name: 'lp',
-            template: require('../partials/index.html'),
-            controller: 'appCtrl',
-            controllerAs: 'app'
-        })
         .state('home', {
-            url: '/home',
+            url: '/',
             name: 'home',
             template: require('../partials/home/home.html'),
             controller: 'homeCtrl',
             controllerAs: 'home'
+        })
+        .state('setup', {
+            url: '/setup',
+            name: 'setup',
+            template: require('../partials/setup/setup.html'),
+            controller: 'setupCtrl',
+            controllerAs: 'setup'
         })
         .state('login', {
             url: '/login',
@@ -30,6 +31,7 @@ let routes = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, 
             controller: 'homeCtrl',
             controllerAs: 'home'
         });
+    $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/home');
 }];
 export default routes;
