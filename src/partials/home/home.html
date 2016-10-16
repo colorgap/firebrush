@@ -6,8 +6,9 @@
             <span flex></span>
             <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
                 <md-nav-item md-nav-href="https://github.com/colorgap/firebowyer" name="github">Github</md-nav-item>
-                <md-nav-item md-nav-click="goto('page2')" ui-sref="login" name="signin">Sign In</md-nav-item>
-                <md-nav-item md-nav-click="goto('page3')" ui-sref="register" name="signup">Sign Up</md-nav-item>
+                <md-nav-item ng-if="!home.user" md-nav-click="goto('page2')" ui-sref="login" name="signin">Sign In</md-nav-item>
+                <md-nav-item ng-if="!home.user" md-nav-click="goto('page3')" ui-sref="register" name="signup">Sign Up</md-nav-item>
+                <md-nav-item ng-if="home.user" md-nav-click="goto('page3')" ui-sref="dashboard" name="signup">Dashboard</md-nav-item>
             </md-nav-bar>
         </div>
     </md-toolbar>

@@ -11,5 +11,5 @@ class Signout {
         });
     }
 }
-
+Signout.$inject = ['$firebaseObject', '$state'];
 export default Signout;

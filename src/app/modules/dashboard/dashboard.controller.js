@@ -16,5 +16,5 @@ class Dashboard {
         // console.log(data);
     }
 }
-
+Dashboard.$inject = ['$firebaseObject', '$state'];
 export default Dashboard;

@@ -16,5 +16,5 @@ class Login {
         });
     }
 }
-
+Login.$inject = ['$firebaseObject', '$state'];
 export default Login;

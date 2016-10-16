@@ -16,5 +16,5 @@ class Setup {
     });
   }
 }
-
+Setup.$inject = ['$firebaseObject', '$state'];
 export default Setup;

@@ -16,5 +16,5 @@ class Register {
     });
   }
 }
-
+Register.$inject = ['$firebaseObject', '$state'];
 export default Register;
