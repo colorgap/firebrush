@@ -5,13 +5,6 @@ class Home {
     'ngInject';
     this.$firebaseObject = $firebaseObject;
     this.$state = $state;
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.user = user;
-      } else {
-        this.$state.go('login');
-      }
-    });
   }
 }
 Home.$inject = ['$firebaseObject', '$state'];
