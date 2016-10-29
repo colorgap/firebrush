@@ -45,6 +45,6 @@ let routes = ['$stateProvider', '$urlRouterProvider', '$locationProvider',
             controllerAs: 'signout'
         });
     $locationProvider.html5Mode(true);
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 }];
 export default routes;

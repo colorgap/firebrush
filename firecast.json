@@ -1,0 +1,10 @@
+{
+    "roles":[{
+        "role_id":1,
+        "role":"Admin"
+    },{
+        "role_id":2,
+        "role":"Regular"
+    }
+    ]
+}
