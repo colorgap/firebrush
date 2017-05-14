@@ -1,5 +1,5 @@
 {
-  "name": "firebowyer",
+  "name": "firebrush",
   "version": "0.1.0",
   "description": "Angular 1x, Material Design, Webpack, ES6 and FireBase. Awesome and secure app in minutes.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colorgap/firebowyer.git"
+    "url": "git+https://github.com/colorgap/firebrush.git"
   },
   "keywords": [
     "AngularJS",
@@ -32,20 +32,20 @@
   "author": "color][gap",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colorgap/firebowyer/issues"
+    "url": "https://github.com/colorgap/firebrush/issues"
   },
-  "homepage": "https://github.com/colorgap/firebowyer#readme",
+  "homepage": "https://github.com/colorgap/firebrush#readme",
   "dependencies": {
-    "angular": "^1.5.8",
-    "angular-animate": "^1.5.8",
-    "angular-aria": "^1.5.8",
+    "angular": "^1.6.4",
+    "angular-animate": "^1.6.4",
+    "angular-aria": "^1.6.4",
     "angular-material": "^1.1.1",
     "angular-ui-router": "^0.3.1",
     "angularfire": "^2.0.2",
     "firebase": "^3.4.1"
   },
   "devDependencies": {
-    "angular-mocks": "^1.5.8",
+    "angular-mocks": "^1.6.4",
     "autoprefixer": "^6.5.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",

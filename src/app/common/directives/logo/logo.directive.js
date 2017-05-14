@@ -8,7 +8,7 @@ class Logo {
 }
 let logo = () => {
     return {
-        template: 'bowyer'
+        template: 'Brush'
     };
 }
 

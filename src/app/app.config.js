@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 let config = ['$mdThemingProvider', function ($mdThemingProvider) {
-    $mdThemingProvider.definePalette('bowyer-purple', {
+    $mdThemingProvider.definePalette('brush-purple', {
       '50': 'FFFFFF',
       '100': 'A872EB',
       '200': '8A41E4',
@@ -23,7 +23,7 @@ let config = ['$mdThemingProvider', function ($mdThemingProvider) {
       'contrastLightColors': ['500', '600', //hues which contrast should be 'dark' by default
         '700', '800', '900', 'A400']    // could also specify this if default was 'dark'
     });
-    $mdThemingProvider.definePalette('bowyer-white', {
+    $mdThemingProvider.definePalette('brush-white', {
       '50': 'FFFFFF',
       '100': 'FFFFFF',
       '200': 'FFFFFF',
@@ -46,17 +46,17 @@ let config = ['$mdThemingProvider', function ($mdThemingProvider) {
         '700', '800', '900', 'A400']    // could also specify this if default was 'dark'
     });
 
-    $mdThemingProvider.theme('bowyer')
-      .primaryPalette('bowyer-purple',{
+    $mdThemingProvider.theme('brush')
+      .primaryPalette('brush-purple',{
         'hue-1':'50'
       })
       .accentPalette('amber')
       .warnPalette('orange');
      $mdThemingProvider.theme('inverse')
-      .primaryPalette('bowyer-white')
+      .primaryPalette('brush-white')
       .accentPalette('deep-purple')
       .warnPalette('orange');
-    $mdThemingProvider.setDefaultTheme('bowyer');
+    $mdThemingProvider.setDefaultTheme('brush');
   }];
 
   export default config;

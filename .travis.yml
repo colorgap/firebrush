@@ -10,4 +10,4 @@ install:
     - npm install
     - npm run travis
 after_success:
-    - firebase deploy --token "$FIREBASE_TOKEN" --project firebowyer
+    - firebase deploy --token "$FIREBASE_TOKEN" --project firebrush

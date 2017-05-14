@@ -1,9 +1,9 @@
-# firebowyer
-Bowyer architecture and ease of development on firebase with angular
+# firebrush
+Brush architecture and ease of development on firebase with angular
 
-> git clone git@github.com:colorgap/firebowyer.git
+> git clone git@github.com:colorgap/firebrush.git
 
-> cd firebowyer
+> cd firebrush
 
 > npm install
 
