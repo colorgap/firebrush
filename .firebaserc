@@ -1,1 +1,5 @@
-{}
+{
+  "projects": {
+    "default": "firebrush-ac2f8"
+  }
+}
